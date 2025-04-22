@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.shape.Line?>
 
-<AnchorPane prefHeight="150.0" prefWidth="1920.0" styleClass="background" stylesheets="@../Styles/mainMenu.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane prefHeight="150.0" prefWidth="1920.0" styleClass="background" stylesheets="@../../Styles/mainMenu.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox fillHeight="false" layoutX="359.0" layoutY="-300.0" prefHeight="60.0" prefWidth="1920.0" styleClass="menu_container" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -18,7 +18,7 @@
                      <graphic>
                         <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/settingBTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/settingBTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -35,7 +35,7 @@
             </HBox>
             <ImageView fitHeight="50.0" fitWidth="54.0" pickOnBounds="true" smooth="false">
                <image>
-                  <Image url="@../Images/MainMenu/logo.png" />
+                  <Image url="@../../Images/MainMenu/logo.png" />
                </image>
                <HBox.margin>
                   <Insets top="5.0" />
@@ -47,7 +47,7 @@
                      <graphic>
                         <ImageView fitHeight="60.0" fitWidth="120.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/friends_BTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/friends_BTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -56,7 +56,7 @@
                      <graphic>
                         <ImageView fitHeight="60.0" fitWidth="120.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/friends_BTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/friends_BTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -65,7 +65,7 @@
                      <graphic>
                         <ImageView fitHeight="60.0" fitWidth="120.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/friends_BTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/friends_BTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -74,7 +74,7 @@
                      <graphic>
                         <ImageView fitHeight="60.0" fitWidth="120.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/friends_BTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/friends_BTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -83,7 +83,7 @@
                      <graphic>
                         <ImageView fitHeight="60.0" fitWidth="120.0" pickOnBounds="true" smooth="false">
                            <image>
-                              <Image url="@../Images/MainMenu/Buttons/friends_BTN.png" />
+                              <Image url="@../../Images/MainMenu/Buttons/friends_BTN.png" />
                            </image>
                         </ImageView>
                      </graphic>
