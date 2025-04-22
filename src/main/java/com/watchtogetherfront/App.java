@@ -11,3 +11,4 @@ public class App extends Application {
         Model.getInstance().getViewService().showDashboard();
     }
 }
+
