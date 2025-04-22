@@ -1,0 +1,47 @@
+
+
+.menu_container {
+    -fx-spacing: 0;
+    -fx-padding: 0;
+    -fx-background-image: url("/menuBackgroundImg.jpg");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+}
+
+.setting_btn {
+    -fx-padding: 4 10 4 10;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.setting_btn Button {
+    -fx-background-color: transparent;
+}
+
+.buttons_container {
+    -fx-padding: 0 0 0 80;
+}
+
+
+#settingButton {
+    -fx-pref-width: 35;
+    -fx-pref-height: 35;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+#menuButton {
+    -fx-shape: "M 20 0 L 120 0 L 100 100 L 0 100 Z";
+    -fx-pref-width: 120;
+    -fx-pref-height: 60;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
+
+}
+
+Button:hover {
+    -fx-cursor: hand;
+}
+
