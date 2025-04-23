@@ -23,6 +23,11 @@
     -fx-padding: 0 0 0 80;
 }
 
+.right_buttons_container {
+    -fx-alignment: center_right;
+    -fx-padding: 0 20 0 0;
+}
+
 
 #settingButton {
     -fx-pref-width: 35;
@@ -41,7 +46,18 @@
 
 }
 
+#rightMenuButton {
+    -fx-shape: "M 10 0 L 60 0 L 50 60 L 0 60 Z";
+    -fx-pref-width: 60;
+    -fx-pref-height: 60;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
+}
+
 Button:hover {
     -fx-cursor: hand;
 }
+
+
 
