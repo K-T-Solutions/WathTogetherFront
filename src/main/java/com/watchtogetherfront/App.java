@@ -7,8 +7,7 @@ import javafx.stage.Stage;
 public class App extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        System.out.println(getClass().getResource("/Images/menuBackgroundImg2.jpg"));
-        Model.getInstance().getViewService().showDashboard();
+        Model.getInstance().getViewService().showClientWindow();
     }
 }
 
