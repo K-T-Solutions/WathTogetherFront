@@ -1,4 +1,4 @@
-package com.watchtogetherfront.controller;
+package com.watchtogetherfront.controller.client;
 
 import com.watchtogetherfront.model.Model;
 import com.watchtogetherfront.utils.UserMenuOptions;
