@@ -31,7 +31,7 @@ public class ViewService {
     }
 
     public void showDashboard() {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/Client/menu.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/FXML/Client/clientMenu.fxml"));
         createStage(loader);
     }
 

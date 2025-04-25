@@ -1,8 +1,12 @@
 package com.watchtogetherfront.controller;
 
 import javafx.fxml.Initializable;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+
+import java.awt.*;
 import java.net.URL;
+import java.util.Objects;
 import java.util.ResourceBundle;
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -41,11 +45,51 @@ public class MenuController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         layoutManager();
+        onButtonClicked();
+        setImages();
+
+
+
+    }
+
+    private void onButtonClicked() {
+        logout_btn.setOnAction(event -> onLogout());
+    }
+
+    private void onLogout() {
+        Stage stage = (Stage) logout_btn.getScene().getWindow();
+        stage.close();
+    }
+
+    private void setImages() {
+        Image friendsNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/friends_BTN.png")));
+        Image friendHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/friendsBtnHover2.png")));
+        Image messangerNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/messangerBtn.png")));
+        Image messangerHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/messangerBtnHover.png")));
+
+
+
+        friends_btn.setOnMouseEntered(event -> {
+            friends_imageView.setImage(friendHover);
+        });
+
+        friends_btn.setOnMouseExited(event -> {
+            friends_imageView.setImage(friendsNormal);
+        });
+
+        messenger_btn.setOnMouseEntered(event -> {
+            messanger_img.setImage(messangerHover);
+        });
+
+        messenger_btn.setOnMouseExited(event -> {
+            messanger_img.setImage(messangerNormal);
+        });
 
 
 
 
     }
+
 
     private void layoutManager() {
         main_hbox.prefWidthProperty().bind(anchorPane.widthProperty().multiply(1));

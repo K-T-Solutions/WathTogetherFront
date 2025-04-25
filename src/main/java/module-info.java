@@ -1,6 +1,7 @@
 module com.watchtogetherfront.watchtogetherfront {
     requires javafx.controls;
     requires javafx.fxml;
+    requires java.desktop;
 
 
     opens com.watchtogetherfront to javafx.fxml;
