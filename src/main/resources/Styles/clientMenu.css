@@ -24,6 +24,15 @@
     -fx-padding: 0 20 0 0;
 }
 
+.right_buttons_container .hBox {
+    -fx-background-color: #BAB2B5;
+    -fx-alignment: center_right;
+    -fx-spacing: 20;
+    -fx-padding: 0 15 0 15;
+    -fx-background-radius: 20;
+    -fx-pref-height: 50;
+}
+
 .logo_container {
     -fx-alignment: center_left;
     -fx-spacing: 20;
@@ -71,6 +80,14 @@
     -fx-font-size: 1.8em;
     /*-fx-text-fill: #AC3B61;*/
     -fx-text-fill: #B39DDB;
+}
+
+#rightBtns {
+    -fx-pref-height: 40;
+    -fx-pref-width: 40;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
 }
 
 #menuButton:hover {

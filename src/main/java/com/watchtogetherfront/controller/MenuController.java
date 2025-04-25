@@ -21,7 +21,6 @@ public class MenuController implements Initializable {
 
     public Button friends_btn;
     public HBox center_btns_hbox;
-    public ImageView friends_imageView;
     public AnchorPane anchorPane;
     public HBox main_hbox;
     public HBox settings_hbox;
@@ -30,17 +29,13 @@ public class MenuController implements Initializable {
     public ImageView logo_img;
     public HBox rigth_btns_hbox;
     public Button logout_btn;
-    public ImageView logout_img;
     public Button messenger_btn;
-    public ImageView messanger_img;
     public Button profile_btn;
-    public ImageView profile_img;
     public Button join_btn;
-    public ImageView join_img;
     public Button host_btn;
-    public ImageView host_img;
     public Button notifications_btn;
     public ImageView notifications_img;
+    public ImageView logout_img;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -62,29 +57,27 @@ public class MenuController implements Initializable {
     }
 
     private void setImages() {
-        Image friendsNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/friends_BTN.png")));
-        Image friendHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/friendsBtnHover2.png")));
-        Image messangerNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/messangerBtn.png")));
-        Image messangerHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/messangerBtnHover.png")));
+        Image notificationsNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/notificationsBtn.png")));
+        Image notificationsHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/notificationsBtnHover.png")));
+        Image exitNormal = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/exitBtn.png")));
+        Image exitHover = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/MainMenu/Buttons/exitBtnHover.png")));
 
 
-
-        friends_btn.setOnMouseEntered(event -> {
-            friends_imageView.setImage(friendHover);
+        notifications_btn.setOnMouseEntered(event -> {
+            notifications_img.setImage(notificationsHover);
         });
 
-        friends_btn.setOnMouseExited(event -> {
-            friends_imageView.setImage(friendsNormal);
+        notifications_btn.setOnMouseExited(event -> {
+            notifications_img.setImage(notificationsNormal);
         });
 
-        messenger_btn.setOnMouseEntered(event -> {
-            messanger_img.setImage(messangerHover);
+        logout_btn.setOnMouseEntered(event -> {
+            logout_img.setImage(exitHover);
         });
 
-        messenger_btn.setOnMouseExited(event -> {
-            messanger_img.setImage(messangerNormal);
+        logout_btn.setOnMouseExited(event -> {
+            logout_img.setImage(exitNormal);
         });
-
 
 
 
@@ -99,20 +92,21 @@ public class MenuController implements Initializable {
         rigth_btns_hbox.prefWidthProperty().bind(main_hbox.widthProperty().multiply(0.41));
         settings_img.setFitWidth(40);
 
-        messenger_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
-        messanger_img.fitWidthProperty().bind(messenger_btn.widthProperty().multiply(1));
 
-        friends_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
-        friends_imageView.fitWidthProperty().bind(friends_btn.widthProperty().multiply(1));
-
-        profile_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
-        profile_img.fitWidthProperty().bind(profile_btn.widthProperty().multiply(1));
-
-        join_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
-        join_img.fitWidthProperty().bind(join_btn.widthProperty().multiply(1));
-
-        host_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.075));
-        host_img.fitWidthProperty().bind(host_btn.widthProperty().multiply(1));
+//        messenger_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
+//        messanger_img.fitWidthProperty().bind(messenger_btn.widthProperty().multiply(1));
+//
+//        friends_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
+//        friends_imageView.fitWidthProperty().bind(friends_btn.widthProperty().multiply(1));
+//
+//        profile_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
+//        profile_img.fitWidthProperty().bind(profile_btn.widthProperty().multiply(1));
+//
+//        join_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
+//        join_img.fitWidthProperty().bind(join_btn.widthProperty().multiply(1));
+//
+//        host_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.075));
+//        host_img.fitWidthProperty().bind(host_btn.widthProperty().multiply(1));
     }
 
 
