@@ -48,7 +48,7 @@ public class ViewService {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.setTitle("WatchTogether");
-        stage.setMinWidth(1300);
+        stage.setMinWidth(1100);
         stage.setFullScreen(true);
 
         stage.show();
