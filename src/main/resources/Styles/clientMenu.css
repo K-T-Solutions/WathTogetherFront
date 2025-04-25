@@ -1,0 +1,104 @@
+
+
+.menu_container {
+    -fx-background-color: #EEE2DC;
+}
+
+.setting_btn {
+    -fx-padding: 4 10 4 10;
+    -fx-spacing: 20;
+    -fx-alignment: center;
+}
+
+.setting_btn Button {
+    -fx-background-color: transparent;
+}
+
+.buttons_container {
+    -fx-padding: 0 0 0 80;
+    -fx-alignment: center_left;
+}
+
+.right_buttons_container {
+    -fx-alignment: center_right;
+    -fx-padding: 0 20 0 0;
+}
+
+.right_buttons_container .hBox {
+    -fx-background-color: #BAB2B5;
+    -fx-alignment: center_right;
+    -fx-spacing: 20;
+    -fx-padding: 0 15 0 15;
+    -fx-background-radius: 20;
+    -fx-pref-height: 50;
+}
+
+.logo_container {
+    -fx-alignment: center_left;
+    -fx-spacing: 20;
+}
+
+.logo_container Label {
+    -fx-text-fill: #123C69;
+    -fx-font-size: 2em;
+    -fx-font-family: Calibri;
+    -fx-font-weight: 700;
+}
+
+#customNameColor {
+    -fx-text-fill: #FFB74D;
+}
+
+
+#settingButton {
+    -fx-pref-width: 35;
+    -fx-pref-height: 35;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+}
+
+#menuButton {
+    /*-fx-shape: "M 20 0 L 120 0 L 100 100 L 0 100 Z";*/
+    -fx-background-radius: 15;
+    -fx-pref-width: 120;
+    -fx-pref-height: 40;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.4em;
+}
+
+#hostPartyButton {
+    -fx-background-radius: 15;
+    -fx-pref-width: 160;
+    -fx-pref-height: 50;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-font-size: 1.8em;
+    /*-fx-text-fill: #AC3B61;*/
+    -fx-text-fill: #B39DDB;
+}
+
+#rightBtns {
+    -fx-pref-height: 40;
+    -fx-pref-width: 40;
+    -fx-padding: 0;
+    -fx-spacing: 0;
+    -fx-background-color: transparent;
+}
+
+#menuButton:hover {
+    -fx-background-color: #AAAAAA;
+
+}
+
+
+Button:hover {
+    -fx-cursor: hand;
+}
+
+
+
