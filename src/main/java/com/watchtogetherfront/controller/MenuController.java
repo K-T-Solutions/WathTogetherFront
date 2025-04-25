@@ -36,6 +36,8 @@ public class MenuController implements Initializable {
     public Button notifications_btn;
     public ImageView notifications_img;
     public ImageView logout_img;
+    public HBox logo_hbox;
+    public HBox app_name_labels_hbox;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -85,12 +87,17 @@ public class MenuController implements Initializable {
 
 
     private void layoutManager() {
+        main_hbox.minHeight(60);
+        logo_hbox.minWidth(320);
+        app_name_labels_hbox.prefWidth(180);
         main_hbox.prefWidthProperty().bind(anchorPane.widthProperty().multiply(1));
         settings_hbox.prefWidthProperty().bind(main_hbox.widthProperty().multiply(0.052));
         logo_img.prefWidth(54);
         center_btns_hbox.prefWidthProperty().bind(main_hbox.widthProperty().multiply(0.5));
         rigth_btns_hbox.prefWidthProperty().bind(main_hbox.widthProperty().multiply(0.41));
         settings_img.setFitWidth(40);
+
+
 
 
 //        messenger_btn.prefWidthProperty().bind(center_btns_hbox.widthProperty().multiply(0.125));
