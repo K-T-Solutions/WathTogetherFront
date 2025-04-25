@@ -1,19 +1,16 @@
-package com.watchtogetherfront.controller;
+package com.watchtogetherfront.controller.client;
 
 import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
-import java.awt.*;
 import java.net.URL;
 import java.util.Objects;
 import java.util.ResourceBundle;
-import javafx.application.Application;
-import javafx.scene.Scene;
+
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
